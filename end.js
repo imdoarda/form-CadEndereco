@@ -1,4 +1,4 @@
-'use strict'; //Modo "Restrito"
+'use strict'; //Modo Restrito
 //Consumindo API de CEP, do ViaCep
 // https://viacep.com.br/
 
@@ -11,7 +11,7 @@ const limparFormulario = (endereco) =>{
 }
 
 //Preenche os campos relacionados ao CEP...
-const preencherForumulario = (endereco) =>{
+const preencherForumulario = () =>{
     document.getElementById('rua').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
     document.getElementById('cidade').value = endereco.localidade;
