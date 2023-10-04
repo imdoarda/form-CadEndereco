@@ -8,6 +8,11 @@
 °[Fontes Consultadas](#fontes-consultadas)  
 °[Autores](#autores)  
 
+## Formulário de endereço
+
+Tela Inicial
+![image](https://github.com/imdoarda/form-CadEndereco/assets/127868962/6ea28395-d7f9-40ea-9956-5847e98e452a)
+
 ## Descrição
 
 O formulário de endereço serve para realizar o cadastro de um certo endereço e, quando inserido o CEP, campos como "rua", "bairro", "cidade" e "estado" são preenchidos automaticamente.
@@ -28,6 +33,8 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
       document.getElementById('estado').value = '';
     }
   Essa função faz com que sempre que for cadastrar um novo endereço, o formulário apague dos campos input o endereço antigo.
+  ![gif](https://github.com/imdoarda/form-CadEndereco/assets/127868962/c45aafca-b4dc-459d-8842-2bc466a0ddd3)
+
 
      const preencherForumulario = (endereco) =>{
      document.getElementById('rua').value = endereco.logradouro;
@@ -37,28 +44,32 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
     }
 
    Nessa função, o código faz com que o formulário seja preenchido automaticamente, quando inserido o CEP.
+   
+   ![gif](https://github.com/imdoarda/form-CadEndereco/assets/127868962/8d3f3110-2fb0-438e-86f6-48d7638c821b)
 
-      const eNumero = (numero) => /^[0-9]+$/.test(numero);
-
-      const cepValido = (cep) => cep.length == 8 && eNumero(cep);
-
-       const pesquisarCep = async() => {
-       limparFormulario();
-       const url = `https://viacep.com.br/ws/${cep.value}/json/`;
+  //Função para consumo de API da Via CEP
+const pesquisarCep = async() => {
+    limparFormulario();
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
     
-       if(cepValido(cep.value)){
-          const dados = await fetch(url); 
-          const addres = await dados.json(); 
+    if(cepValido(cep.value)){
+        const dados = await fetch(url); //await = esperar fetch = promessa
+        const addres = await dados.json(); // retorna dados no formato JSON
         
-           if(addres.hasOwnProperty('erro')){ 
-             alert('CEP não encontrado!');
-          }else {
-              preencherForumulario(addres);
-         }
-         }else{
-           alert('CEP incorreto!');
-        } 
-    }
+        // hasOwnProperty  retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão
+        if(addres.hasOwnProperty('erro')){ 
+            // document.getElementById('rua').value = 'CEP não encontrado!';
+            alert('CEP não encontrado!');
+            //se tiver erro
+        }else {
+            preencherForumulario(addres);
+        }
+        //se não tiver erro
+    }else{
+        // document.getElementById('rua').value = 'CEP incorreto!';
+        alert('CEP incorreto!');
+    } 
+}
 
 Já essa ultima função é um pouco mais complexa,
 
