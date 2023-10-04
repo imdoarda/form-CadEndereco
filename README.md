@@ -126,4 +126,5 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 
 ## Autores
 
-Maria Eduarda Mendes 
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Maria Eduarda Mendes</sub>](https://github.com/imdoarda/form-CadEndereco/assets/127868962/91cc6339-0fe8-4f66-bd8a-d58938f77ee5)
+)
