@@ -10,7 +10,7 @@
 
 ## Formulário de endereço
 
-### ``TELA INICIAL``
+### TELA INICIAL
 ![image](https://github.com/imdoarda/form-CadEndereco/assets/127868962/6ea28395-d7f9-40ea-9956-5847e98e452a)
 
 ## Descrição
