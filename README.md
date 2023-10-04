@@ -35,7 +35,7 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
      }  
 
      
-  Essa função faz com que sempre que for cadastrar um novo endereço, o formulário apague dos campos input o endereço antigo.  
+  Essa função faz com que sempre que for cadastrar um novo endereço, o formulário apague dos campos o endereço antigo.  
 
   
   ![gif](https://github.com/imdoarda/form-CadEndereco/assets/127868962/c45aafca-b4dc-459d-8842-2bc466a0ddd3)
@@ -99,7 +99,7 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
       }  
 
       
-  Já essa ultima função é um pouco mais complexa, "async()" faz com que não precise ser seguida uma ordem exata e, como escrito nos comentários, é uma função para o consumo de API da Via CEO, ou seja, o código vai "checar" com a Via CEP se o CEP inserido é realmente válido. Caso o CEP não seja válido, o site retornará uma mensagem de "CEP não encontado" senão, os campos de endereço são preenchidos automaticamente, como mostrado acima.  
+  Já essa última função é um pouco mais complexa, "async()" faz com que não precise ser seguida uma ordem exata e, como escrito nos comentários, é uma função para o consumo de API da Via CEO, ou seja, o código vai "checar" com a Via CEP se o CEP inserido é realmente válido. Caso o CEP não seja válido, o site retornará uma mensagem de "CEP não encontado" senão, os campos de endereço são preenchidos automaticamente, como mostrado acima.  
 
   ![tela3](https://github.com/imdoarda/form-CadEndereco/assets/127868962/11f5abe2-c767-46c1-839d-f16ec804c4af)  
 
@@ -112,7 +112,7 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 *  ``Bootstrap5``
 *  ``GitHub``
 *  ``Git``
-* ``API``
+* ``API Via CEP``
 * ``Regex Pal``
 
 ## Fontes Consultadas
@@ -120,6 +120,8 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 [Regex Pal](https://www.regexpal.com/) - Testando funções
 
 [Via CEP]( https://viacep.com.br/) - Consulte CEPs de todo o Brasil
+
+[Alura](https://www.alura.com.br/artigos/escrever-bom-readme) - Como escrever um README incrível no seu Github
 
 
 ## Autores
