@@ -10,17 +10,16 @@
 
 ## Descrição
 
-O Portifólio Pessoal é um projeto realizado em sala de aula com a intenção de melhorar o desenvolvimento dos alunos ao fazer o arquivo README. O projeto teve auxiliação do Bootstrap para a página inicial, tanto o CSS quanto HTML.
+O formulário de endereço serve para realizar o cadastro de um certo endereço e, quando inserido o CEP, campos como "rua", "bairro", "cidade" e "estado" são preenchidos automaticamente.
 
     
 ## Introdução
 
- Neste projeto aprendemos a utilizar Arrow Function fazendo um formulário de endereço
+ Neste projeto aprendemos a utilizar Arrow Function fazendo um formulário de endereço.  No formulário, quando se digita o CEP de alguma rua, acontece o preenchimento automático de outros campos de endereço. Para que isso acontecesse, utilizei várias funções do tipo Arrow.
 
 ## Funcionalidades
 
-Possuí funcionalidade inicial de ajudar os alunos como ter melhorias na capacidade de preparação e construção do arquivo README nesse e em próximos projetos.
-O aprendizado de construção do README será utilizado em todos os projetos enviados até o GITHUB, assim também melhorando as habilidades em escritas futuras, que serão utilizados dentro e fora do colégio, como em ambientes de trabalho.
+Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento em Arrow Function.
 
 ### Tecnologias utilizadas
 
@@ -31,14 +30,15 @@ O aprendizado de construção do README será utilizado em todos os projetos env
 *  ``GitHub``
 *  ``Git``
 * ``API``
+* ``Regex Pal``
 
 ## Fontes Consultadas
 
-[git hub]() - UM modelo para fazer um bom README
+[Regex Pal](https://www.regexpal.com/) - Testando funções
 
-[alura]() - Como escrever um README incrível no seu Github
+[Via CEP]( https://viacep.com.br/) - Consulte CEPs de todo o Brasil
 
 
 ## Autores
 
-Maria Eduarda Mendes e Layla Beatrice
+Maria Eduarda Mendes 
