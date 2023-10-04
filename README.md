@@ -21,20 +21,21 @@ O formulário de endereço serve para realizar o cadastro de um certo endereço 
 
 Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento em Arrow Function, utilizando os seguintes códigos:
 
-    const limparFormulario = () =>{
-    document.getElementById('rua').value = '';
-    document.getElementById('bairro').value = '';
-    document.getElementById('cidade').value = '';
-    document.getElementById('estado').value = '';
-}
+      const limparFormulario = () =>{
+      document.getElementById('rua').value = '';
+      document.getElementById('bairro').value = '';
+      document.getElementById('cidade').value = '';
+      document.getElementById('estado').value = '';
+    }
   Essa função faz com que sempre que for cadastrar um novo endereço, o formulário apague dos campos input o endereço antigo.
 
-    const preencherForumulario = (endereco) =>{
-    document.getElementById('rua').value = endereco.logradouro;
-    document.getElementById('bairro').value = endereco.bairro;
-    document.getElementById('cidade').value = endereco.localidade;
-    document.getElementById('estado').value = endereco.uf;
-}
+     const preencherForumulario = (endereco) =>{
+     document.getElementById('rua').value = endereco.logradouro;
+     document.getElementById('bairro').value = endereco.bairro;
+     document.getElementById('cidade').value = endereco.localidade;
+     document.getElementById('estado').value = endereco.uf;
+    }
+
    Nessa função, o código faz com que o formulário seja preenchido automaticamente, quando inserido o CEP.
 
       const eNumero = (numero) => /^[0-9]+$/.test(numero);
@@ -49,15 +50,15 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
           const dados = await fetch(url); 
           const addres = await dados.json(); 
         
-        if(addres.hasOwnProperty('erro')){ 
-            alert('CEP não encontrado!');
-        }else {
-            preencherForumulario(addres);
-        }
-    }else{
-        alert('CEP incorreto!');
-    } 
-}
+           if(addres.hasOwnProperty('erro')){ 
+             alert('CEP não encontrado!');
+          }else {
+              preencherForumulario(addres);
+         }
+         }else{
+           alert('CEP incorreto!');
+        } 
+    }
 
 Já essa ultima função é um pouco mais complexa,
 
