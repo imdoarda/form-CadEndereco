@@ -70,7 +70,8 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
       const cepValido = (cep) => cep.length == 8 && eNumero(cep);
       //length é tamanho
 
-      Essa função é para checar se o tamanho do CEP está correto e se é apenas números.
+
+Essa função é para checar se o tamanho do CEP está correto e se é apenas números.
 
 
 
