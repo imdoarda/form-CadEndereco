@@ -27,6 +27,7 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
     document.getElementById('cidade').value = '';
     document.getElementById('estado').value = '';
 }
+  Essa função faz com que sempre que for cadastrar um novo endereço, o formulário apague dos campos input o endereço antigo.
 
     const preencherForumulario = (endereco) =>{
     document.getElementById('rua').value = endereco.logradouro;
@@ -34,18 +35,19 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
     document.getElementById('cidade').value = endereco.localidade;
     document.getElementById('estado').value = endereco.uf;
 }
+   Nessa função, o código faz com que o formulário seja preenchido automaticamente, quando inserido o CEP.
 
-    const eNumero = (numero) => /^[0-9]+$/.test(numero);
+      const eNumero = (numero) => /^[0-9]+$/.test(numero);
 
-    const cepValido = (cep) => cep.length == 8 && eNumero(cep);
+      const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
-    const pesquisarCep = async() => {
-    limparFormulario();
-    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
+       const pesquisarCep = async() => {
+       limparFormulario();
+       const url = `https://viacep.com.br/ws/${cep.value}/json/`;
     
-    if(cepValido(cep.value)){
-        const dados = await fetch(url); 
-        const addres = await dados.json(); 
+       if(cepValido(cep.value)){
+          const dados = await fetch(url); 
+          const addres = await dados.json(); 
         
         if(addres.hasOwnProperty('erro')){ 
             alert('CEP não encontrado!');
@@ -56,6 +58,8 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
         alert('CEP incorreto!');
     } 
 }
+
+Já essa ultima função é um pouco mais complexa,
 
 ### Tecnologias utilizadas
 
