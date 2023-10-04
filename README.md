@@ -84,7 +84,6 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
       }
   Já essa ultima função é um pouco mais complexa, "async()" faz com que não precise ser seguida uma ordem exata e, como escrito nos comentários, é uma função para o consumo de API da Via CEO, ou seja, o código vai "checar" com a Via CEP se o CEP inserido é realmente válido. Caso o CEP não seja válido, o site retornará uma mensagem de "CEP não encontado" senão, os campos de endereço são preenchidos automaticamente, como mostrado acima.
 
-  ![gif](tela3.gif)
 
 ### Tecnologias utilizadas
 
