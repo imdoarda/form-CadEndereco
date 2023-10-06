@@ -117,6 +117,19 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 * ``Regex Pal``
 
 
+### Resursos de JavaScript
+
+
+* ``fetch`` - Serve para acessar e manipular os pedidos e respostas da API, no código, o fetch é como se fosse uma "promessa", ou seja, vai acontecer
+* ``await`` - Await é um elemento utilizado para esperar por uma "promessa"
+* ``hasOwnProperty`` - Método de Object instâncias retorna um booleano indicando se este objeto possui a propriedade especificada como propriedade própria (em vez de herdá-la).
+° ``Booleano`` - é um tipo de dado que representa apenas dois estados, verdadeiro ou falso.
+* ``async()`` - Método que faz uma verificação assíncrona, ou seja, determina que a função é do tipo assíncrona e não precisa ser executada exatamente no momento
+* `` /^[0-9]+$/.test(numero)`` - Essa expressão regular serve para verificar se o CEP inserido tem apenas números, mesmo eles sendo repetidos
+
+* fetch, await e async tem uma ligação no código.
+
+
 ## Fontes Consultadas
 
 [Regex Pal](https://www.regexpal.com/) - Testando funções
@@ -124,6 +137,14 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 [Via CEP]( https://viacep.com.br/) - Consulte CEPs de todo o Brasil
 
 [Alura](https://www.alura.com.br/artigos/escrever-bom-readme) - Como escrever um README incrível no seu Github
+
+[Alura](https://www.alura.com.br/artigos/async-await-no-javascript-o-que-e-e-quando-usar) - Async/await no JavaScript: o que é e quando usar a programação assíncrona?
+
+[Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/await) - Await
+
+[Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch) - Usando Fetch
+
+[Mozilla](Async/await no JavaScript: o que é e quando usar a programação assíncrona?) - Object.prototype.hasOwnProperty()
 
 
 ## Autores
