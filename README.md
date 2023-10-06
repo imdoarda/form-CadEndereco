@@ -27,8 +27,9 @@ O formulário de endereço serve para realizar o cadastro de um certo endereço 
 
 ## Funcionalidades
 
-Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento em Arrow Function, utilizando os seguintes códigos:   
+Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento em Arrow Function.
 
+### Funcionalidade 1
 
        const limparFormulario = () =>{
        document.getElementById('rua').value = '';
@@ -40,11 +41,13 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
      
   Essa função faz com que sempre que for cadastrar um novo endereço, o formulário apague dos campos o endereço antigo.  
 
+  ``Veja o resultado a seguir:``
+
   
   ![gif](https://github.com/imdoarda/form-CadEndereco/assets/127868962/c45aafca-b4dc-459d-8842-2bc466a0ddd3)
 
   
-
+### Funcionalidade 2
 
       const preencherForumulario = (endereco) =>{
        document.getElementById('rua').value = endereco.logradouro;
@@ -57,13 +60,15 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
 
    Nessa função, o código faz com que o formulário seja preenchido automaticamente, quando inserido o CEP.  
 
+   ``Veja o resultado a seguir:``
+
    
    
    ![gif](https://github.com/imdoarda/form-CadEndereco/assets/127868962/8d3f3110-2fb0-438e-86f6-48d7638c821b)  
 
 
    
-
+### Funcionalidade 3
 
 
         //Verifica se o CEP é válido...
@@ -75,6 +80,8 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
 
 
 Essa função é para checar se o tamanho do CEP está correto e se é apenas números.
+
+### Funcionalidade 4
 
 
 
@@ -103,6 +110,8 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 
       
   Já essa última função é um pouco mais complexa, "async()" faz com que não precise ser seguida uma ordem exata e, como escrito nos comentários, é uma função para o consumo de API da Via CEO, ou seja, o código vai "checar" com a Via CEP se o CEP inserido é realmente válido. Caso o CEP não seja válido, o site retornará uma mensagem de "CEP não encontado" senão, os campos de endereço são preenchidos automaticamente, como mostrado acima.  
+
+  ``Veja o resultado a seguir:``
 
   ![tela3](https://github.com/imdoarda/form-CadEndereco/assets/127868962/11f5abe2-c767-46c1-839d-f16ec804c4af)  
 
