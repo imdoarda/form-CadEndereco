@@ -114,6 +114,7 @@ Possuí funcionalidade inicial de ajudar os alunos a aprofundarem o conhecimento
 * ``API``
 * ``Regex Pal``
 
+
 ## Fontes Consultadas
 
 [Regex Pal](https://www.regexpal.com/) - Testando funções
