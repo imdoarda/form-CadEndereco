@@ -1,12 +1,14 @@
 
 # ÍNDICE
  
-°[Descrição](#descri%C3%A7%C3%A3o)  
-°[Introdução](#introdu%C3%A7%C3%A3o)  
-°[Funcionalidades](#funcionalidades)  
-°[Tecnologias Utilizadas](#tecnologias-utilizadas)  
-°[Fontes Consultadas](#fontes-consultadas)  
-°[Autores](#autores)  
+* [Descrição](#descri%C3%A7%C3%A3o)  
+* [Introdução](#introdu%C3%A7%C3%A3o)  
+* [Funcionalidades](#funcionalidades)  
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)  
+* [Recursos JavaScript Utilizados](#resursos-de-javascript)
+* [Fontes Consultadas](#fontes-consultadas)  
+* [Autores](#autores)  
+
 
 ## Formulário de endereço
 
@@ -144,7 +146,7 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 
 [Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch) - Usando Fetch
 
-[Mozilla](Async/await no JavaScript: o que é e quando usar a programação assíncrona?) - Object.prototype.hasOwnProperty()
+[Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) - Object.prototype.hasOwnProperty()
 
 
 ## Autores
