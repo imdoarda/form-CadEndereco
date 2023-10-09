@@ -109,11 +109,20 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
       }  
 
       
-  Já essa última função é um pouco mais complexa, "async()" faz com que não precise ser seguida uma ordem exata e, como escrito nos comentários, é uma função para o consumo de API da Via CEO, ou seja, o código vai "checar" com a Via CEP se o CEP inserido é realmente válido. Caso o CEP não seja válido, o site retornará uma mensagem de "CEP não encontado" senão, os campos de endereço são preenchidos automaticamente, como mostrado acima.  
+  Já essa função é um pouco mais complexa, "async()" faz com que não precise ser seguida uma ordem exata e, como escrito nos comentários, é uma função para o consumo de API da Via CEP, ou seja, o código vai "checar" com a Via CEP se o CEP inserido é realmente válido. Caso o CEP não seja válido, o site retornará uma mensagem de "CEP não encontado" senão, os campos de endereço são preenchidos automaticamente, como mostrado acima.  
 
   ``Veja o resultado a seguir:``
 
   ![tela3](https://github.com/imdoarda/form-CadEndereco/assets/127868962/11f5abe2-c767-46c1-839d-f16ec804c4af)  
+
+
+### Funcionalidade 4
+
+
+    document.getElementById('cep').addEventListener('focusout', pesquisarCep);
+
+
+  Essa última função é responsável em procurar o CEP inserido e completar os dados do endereço assim que tirar o campo de foco, como mostrado em um dos exemplos acima.
 
 
 ### Tecnologias utilizadas
@@ -131,12 +140,13 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 ### Resursos de JavaScript
 
 
-* ``fetch`` - Serve para acessar e manipular os pedidos e respostas da API, no código, o fetch é como se fosse uma "promessa", ou seja, vai acontecer
-* ``await`` - Await é um elemento utilizado para esperar por uma "promessa"
+* ``fetch`` - Serve para acessar e manipular os pedidos e respostas da API, no código, o fetch é como se fosse uma "promessa", ou seja, vai acontecer.
+* ``await`` - Await é um elemento utilizado para esperar por uma "promessa".
 * ``hasOwnProperty`` - Método de Object instâncias retorna um booleano indicando se este objeto possui a propriedade especificada como propriedade própria (em vez de herdá-la).
 ° ``Booleano`` - é um tipo de dado que representa apenas dois estados, verdadeiro ou falso.
-* ``async()`` - Método que faz uma verificação assíncrona, ou seja, determina que a função é do tipo assíncrona e não precisa ser executada exatamente no momento
-* `` /^[0-9]+$/.test(numero)`` - Essa expressão regular serve para verificar se o CEP inserido tem apenas números, mesmo eles sendo repetidos
+* ``async()`` - Método que faz uma verificação assíncrona, ou seja, determina que a função é do tipo assíncrona e não precisa ser executada exatamente no momento.
+* `` /^[0-9]+$/.test(numero)`` - Essa expressão regular serve para verificar se o CEP inserido tem apenas números, mesmo eles sendo repetidos e verifica também se possui oito números.
+* ``addEventListener`` - Esse elemento faz exatamente como o nome diz "adicionar ouvinte de evento" ou seja, para realizar uma ação, precisa de um ouvinte que confere se uma outra ação foi executada.
 
 * fetch, await e async tem uma ligação no código.
 
@@ -157,6 +167,7 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
 
 [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) - Object.prototype.hasOwnProperty()
 
+[Mozilla](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener) - Element.addEventListener()
 
 ## Autores
 
