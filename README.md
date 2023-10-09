@@ -116,7 +116,7 @@ Essa função é para checar se o tamanho do CEP está correto e se é apenas n�
   ![tela3](https://github.com/imdoarda/form-CadEndereco/assets/127868962/11f5abe2-c767-46c1-839d-f16ec804c4af)  
 
 
-### Funcionalidade 4
+### Funcionalidade 5
 
 
     document.getElementById('cep').addEventListener('focusout', pesquisarCep);
